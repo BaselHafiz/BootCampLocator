@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/textView_locationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7D7D7D"
+                android:textSize="20sp"
+                android:text="On The Campus"/>
+
+            <TextView
+                android:id="@+id/textView_locationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#7D7D7D"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:text="1 Grand Ave, San  louis Obispo"/>
+
+        </LinearLayout>
+
+        <ImageViewfd
+            android:id="@+id/imageView_locationImg"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
